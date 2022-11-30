@@ -1,34 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import ProfileSection from './components/sections/ProfileSection'
+import EducationSection from './components/sections/EducationSection'
+import SkillsSection from './components/sections/SkillsSection'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    return (
+        <div className="bg-surface">
+            <div className='p-4 fixed top-0 w-full bg-surface z-10'>
+                <button className='bg-surface hover:bg-onSurface hover:bg-opacity-[0.08] p-2 grid justify-center rounded-lg'>
+                    <span className="material-symbols-rounded text-onSurface">
+                        menu
+                    </span>
+                </button>
+            </div>
+            <ProfileSection/>
+            <EducationSection/>
+            <SkillsSection/>
+        </div> 
+    )
 }
 
 export default App
