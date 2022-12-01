@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout'
 import ExperienceTitle from './ExperienteTitle/ExperienceTitle';
 
 const ExperienceSection = () => (
-    <Layout className='py-8'>
+    <Layout className='py-8' id="experience-projects">
         <div className="flex space-x-2">
             <h2 className="text-onSurfaceVariant text-2xl flex font-medium items-center">
                 Experience and projects

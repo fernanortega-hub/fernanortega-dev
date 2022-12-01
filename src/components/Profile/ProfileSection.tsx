@@ -4,7 +4,7 @@ import React from "react";
 
 const ProfileSection = () => {
     return (
-        <Layout>
+        <Layout id="about">
             <h1 className="text-2xl pt-[72px]">
                 Hi! I'm Fernando  <br></br>
                 <span className="text-primary text-2xl"> Web & Android Developer Jr </span>

@@ -5,7 +5,7 @@ import { FirstArrow, SecondArrow } from '../../vectors/SecondSectionArrows'
 
 const EducationSection = () => {
     return (
-        <Layout className={'space-y-4 py-8 flex flex-col'}>
+        <Layout className={'space-y-4 py-8 flex flex-col'} id='education'>
             <div className="flex space-x-2">
                 <h2 className="text-onSurfaceVariant text-2xl flex font-medium items-center">
                     Education

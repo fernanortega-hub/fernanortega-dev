@@ -4,7 +4,7 @@ import SkillCard from './SkillCard/SkillCard'
 import React from 'react';
 
 const SkillsSection = () => (
-    <Layout className="py-8">
+    <Layout className="py-8" id="skills">
         <div className="flex space-x-2">
             <h2 className="text-onSurfaceVariant text-2xl flex font-medium items-center">
                 Skills

@@ -2,5 +2,6 @@ import React from "react"
 
 export type LayoutProps = {
     children: React.ReactNode,
-    className?: String
+    className?: String,
+    id: String
 }
