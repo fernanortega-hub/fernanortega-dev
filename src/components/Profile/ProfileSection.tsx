@@ -1,5 +1,6 @@
 import FirstSectionArrow from "../../vectors/FirstSectionArrow";
-import Layout from "../layouts/Layout";
+import Layout from '../layouts/Layout'
+import React from "react";
 
 const ProfileSection = () => {
     return (
@@ -12,7 +13,7 @@ const ProfileSection = () => {
             <div className="relative grid place-content-center h-[338px] max-w-[381px] group">
                 <div className="absolute top-8 bg-secondary60 w-[240px] h-[240px] rounded-full transition-all group-hover:bg-[#B2CCC1] group-hover:w-[270px] group-hover:h-[270px]"></div>
                 <div className="absolute -bottom-3 right-0 bg-primary w-[240px] h-[240px] rounded-full transition-all group-hover:bg-[#60DBB8] group-hover:w-[270px] group-hover:h-[270px]"></div>
-                <img src="/src/assets/profile-pic.png"
+                <img src="/profile-pic.png"
                     alt="Profile photo from Fernando Ortega"
                     className="relative rounded-full h-[200px] " />
             </div>

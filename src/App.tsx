@@ -1,6 +1,7 @@
-import ProfileSection from './components/sections/ProfileSection'
-import EducationSection from './components/sections/EducationSection'
-import SkillsSection from './components/sections/SkillsSection'
+import ProfileSection from './components/Profile/ProfileSection'
+import EducationSection from './components/Education/EducationSection'
+import SkillsSection from './components/Skills/SkillsSection'
+import ExperienceSection from './components/Experience/ExperienceSection'
 
 function App() {
 
@@ -13,10 +14,11 @@ function App() {
                     </span>
                 </button>
             </div>
-            <ProfileSection/>
-            <EducationSection/>
-            <SkillsSection/>
-        </div> 
+            <ProfileSection />
+            <EducationSection />
+            <SkillsSection />
+            <ExperienceSection />
+        </div>
     )
 }
 

@@ -1,6 +1,6 @@
 import Layout from '../layouts/Layout'
-import LanguageCard from './SkillsComponets/LanguageCard/LanguajeCard'
-import SkillCard from './SkillsComponets/SkillCard/SkillCard'
+import LanguageCard from './LanguageCard/LanguajeCard'
+import SkillCard from './SkillCard/SkillCard'
 import React from 'react';
 
 const SkillsSection = () => (
@@ -25,47 +25,47 @@ const SkillsSection = () => (
 
                 <div className='space-y-[10px]'>
                     <p className='text-primary font-medium'> Frontend development </p>
-                    <SkillCard src="/src/assets/react.png" skill='ReactJS' />
-                    <SkillCard src="/src/assets/next.png" skill='NextJS' />
-                    <SkillCard src="/src/assets/tailwind.png" skill='TailwindCSS' />
+                    <SkillCard src="/react.png" skill='ReactJS' />
+                    <SkillCard src="/next.png" skill='NextJS' />
+                    <SkillCard src="/tailwind.png" skill='TailwindCSS' />
                 </div>
 
                 <div className='space-y-[10px]'>
                     <p className='text-primary font-medium'> Backend development </p>
-                    <SkillCard src="/src/assets/nodejs.png" skill='NodeJS' />
-                    <SkillCard src="/src/assets/dotnet.png" skill='.NET Core' />
+                    <SkillCard src="/nodejs.png" skill='NodeJS' />
+                    <SkillCard src="/dotnet.png" skill='.NET Core' />
                 </div>
 
             </div>
 
             <div className='space-y-[10px]'>
                 <h3 className='font-medium'>Databases</h3>
-                <SkillCard src="/src/assets/mongo.png" skill='Mongo DB' />
-                <SkillCard src="/src/assets/sqlserver.png" skill='Microsoft SQL Server' />
-                <SkillCard src="/src/assets/oracle.png" skill='Oracle Database' />
+                <SkillCard src="/mongo.png" skill='Mongo DB' />
+                <SkillCard src="/sqlserver.png" skill='Microsoft SQL Server' />
+                <SkillCard src="/oracle.png" skill='Oracle Database' />
             </div>
 
             <div className='space-y-[10px]'>
                 <h3 className='font-medium'>Mobile development</h3>
-                <SkillCard src="/src/assets/android.png" skill='Android Development, XML, Jetpack Compose' />
+                <SkillCard src="/android.png" skill='Android Development, XML, Jetpack Compose' />
             </div>
 
             <div className='space-y-[10px]'>
                 <h3 className='font-medium'>Programming languages</h3>
-                <SkillCard src="/src/assets/cplusplus.png" skill='C++' />
-                <SkillCard src="/src/assets/csharp.png" skill='C#' />
-                <SkillCard src="/src/assets/kotlin.svg" skill='Kotlin' />
-                <SkillCard src="/src/assets/js.png" skill='Javascript' />
-                <SkillCard src="/src/assets/Typescript.png" skill='Typescript' />
+                <SkillCard src="/cplusplus.png" skill='C++' />
+                <SkillCard src="/csharp.png" skill='C#' />
+                <SkillCard src="/kotlin.svg" skill='Kotlin' />
+                <SkillCard src="/js.png" skill='Javascript' />
+                <SkillCard src="/Typescript.png" skill='Typescript' />
             </div>
 
             <div className='space-y-[10px]'>
                 <h3 className='font-medium'>Tools for development, design and team work</h3>
-                <SkillCard src="/src/assets/jira.png" skill='Jira' />
-                <SkillCard src="/src/assets/Git.png" skill='Git' />
-                <SkillCard src="/src/assets/github.png" skill='Github' />
-                <SkillCard src="/src/assets/docker.png" skill='Docker' />
-                <SkillCard src="/src/assets/figma.svg" skill='Figma' />
+                <SkillCard src="/jira.png" skill='Jira' />
+                <SkillCard src="/Git.png" skill='Git' />
+                <SkillCard src="/github.png" skill='Github' />
+                <SkillCard src="/docker.png" skill='Docker' />
+                <SkillCard src="/figma.svg" skill='Figma' />
             </div>
 
         </div>
