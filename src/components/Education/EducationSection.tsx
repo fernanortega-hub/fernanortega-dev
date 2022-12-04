@@ -28,9 +28,11 @@ const EducationSection = () => {
 
             <div>
                 <FirstArrow />
-                <div className="flex justify-between w-full m-0">
+                <div className="flex justify-center w-full space-x-4">
                     <SecondArrow />
-                    <span className="py-3 px-5 bg-primary h-[40px] text-white text-sm rounded-xl min-w-fit self-center"> My skills </span>
+                    <span className="py-3 px-5 text-onSurface text-sm rounded-xl min-w-fit 
+                        flex justify-center items-center border-[3px] border-secondary border-dashed 
+                        self-center align-middle h-[42px]"> My skills </span>
                 </div>
             </div>
         </Layout>

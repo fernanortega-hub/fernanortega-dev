@@ -7,8 +7,6 @@ import AboutSection from './components/About/AboutSection'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
-    const [open, setOpen] = useState(false);
-
     return (
         <div>
             <Navbar />

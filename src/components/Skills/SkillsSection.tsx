@@ -1,7 +1,6 @@
 import Layout from '../layouts/Layout'
 import LanguageCard from './LanguageCard/LanguajeCard'
 import SkillCard from './SkillCard/SkillCard'
-import React from 'react';
 
 const SkillsSection = () => (
     <Layout className="py-8" id="skills">
@@ -23,49 +22,55 @@ const SkillsSection = () => (
             <div className='space-y-[10px]'>
                 <h3 className='font-medium'>Web development</h3>
 
-                <div className='space-y-[10px]'>
-                    <p className='text-primary font-medium'> Frontend development </p>
-                    <SkillCard src="/react.png" skill='ReactJS' />
-                    <SkillCard src="/next.png" skill='NextJS' />
-                    <SkillCard src="/tailwind.png" skill='TailwindCSS' />
+                <div className='space-y-[10px] md:flex md:flex-row md:space-y-0'>
+                    <div className='space-y-[10px] md:w-full'>
+                        <p className='text-primary font-medium'> Frontend development </p>
+                        <SkillCard src="/react.png" skill='ReactJS' />
+                        <SkillCard src="/next.png" skill='NextJS' />
+                        <SkillCard src="/tailwind.png" skill='TailwindCSS' />
+                    </div>
+
+                    <div className='space-y-[10px] md:w-full'>
+                        <p className='text-primary font-medium'> Backend development </p>
+                        <SkillCard src="/nodejs.png" skill='NodeJS' />
+                        <SkillCard src="/dotnet.png" skill='.NET Core' />
+                    </div>
                 </div>
 
-                <div className='space-y-[10px]'>
-                    <p className='text-primary font-medium'> Backend development </p>
-                    <SkillCard src="/nodejs.png" skill='NodeJS' />
-                    <SkillCard src="/dotnet.png" skill='.NET Core' />
+            </div>
+
+            <div className='space-y-[10px] md:flex md:flex-row md:space-y-0'>
+                <div className='space-y-[10px] md:w-full'>
+                    <h3 className='font-medium'>Databases</h3>
+                    <SkillCard src="/mongo.png" skill='Mongo DB' />
+                    <SkillCard src="/sqlserver.png" skill='Microsoft SQL Server' />
+                    <SkillCard src="/oracle.png" skill='Oracle Database' />
                 </div>
 
+                <div className='space-y-[10px] md:w-full'>
+                    <h3 className='font-medium'>Mobile development</h3>
+                    <SkillCard src="/android.png" skill='Android Development, XML, Jetpack Compose' />
+                </div>
             </div>
 
-            <div className='space-y-[10px]'>
-                <h3 className='font-medium'>Databases</h3>
-                <SkillCard src="/mongo.png" skill='Mongo DB' />
-                <SkillCard src="/sqlserver.png" skill='Microsoft SQL Server' />
-                <SkillCard src="/oracle.png" skill='Oracle Database' />
-            </div>
+            <div className='space-y-[10px] md:flex md:flex-row md:space-y-0'>
+                <div className='space-y-[10px] md:w-full'>
+                    <h3 className='font-medium'>Programming languages</h3>
+                    <SkillCard src="/cplusplus.png" skill='C++' />
+                    <SkillCard src="/csharp.png" skill='C#' />
+                    <SkillCard src="/kotlin.svg" skill='Kotlin' />
+                    <SkillCard src="/js.png" skill='Javascript' />
+                    <SkillCard src="/Typescript.png" skill='Typescript' />
+                </div>
 
-            <div className='space-y-[10px]'>
-                <h3 className='font-medium'>Mobile development</h3>
-                <SkillCard src="/android.png" skill='Android Development, XML, Jetpack Compose' />
-            </div>
-
-            <div className='space-y-[10px]'>
-                <h3 className='font-medium'>Programming languages</h3>
-                <SkillCard src="/cplusplus.png" skill='C++' />
-                <SkillCard src="/csharp.png" skill='C#' />
-                <SkillCard src="/kotlin.svg" skill='Kotlin' />
-                <SkillCard src="/js.png" skill='Javascript' />
-                <SkillCard src="/Typescript.png" skill='Typescript' />
-            </div>
-
-            <div className='space-y-[10px]'>
-                <h3 className='font-medium'>Tools for development, design and team work</h3>
-                <SkillCard src="/jira.png" skill='Jira' />
-                <SkillCard src="/Git.png" skill='Git' />
-                <SkillCard src="/github.png" skill='Github' />
-                <SkillCard src="/docker.png" skill='Docker' />
-                <SkillCard src="/figma.svg" skill='Figma' />
+                <div className='space-y-[10px] md:w-full'>
+                    <h3 className='font-medium'>Tools for development, design and team work</h3>
+                    <SkillCard src="/jira.png" skill='Jira' />
+                    <SkillCard src="/Git.png" skill='Git' />
+                    <SkillCard src="/github.png" skill='Github' />
+                    <SkillCard src="/docker.png" skill='Docker' />
+                    <SkillCard src="/figma.svg" skill='Figma' />
+                </div>
             </div>
 
         </div>

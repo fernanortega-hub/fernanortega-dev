@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Navbar = () => {
-
     const [open, setOpen] = React.useState(false);
-    const getNav = React.useRef("")
+    const [colorChange, setColorchange] = React.useState(false);
 
     function openOrNot() {
+        console.log(window.scrollY);
         setOpen(!open)
     }
 
@@ -13,16 +13,26 @@ const Navbar = () => {
         return window.location.hash;
     }
 
+    const changeNavbarColor = () =>{
+       if(window.scrollY >= 72){
+         setColorchange(true);
+       }
+       else{
+         setColorchange(false);
+       }
+    };
+
+    window.addEventListener('scroll', changeNavbarColor);
 
     function normalNavBar() {
         return (
-            <div className='p-4 fixed top-0 w-full bg-surface z-10'>
+            <div className={`${colorChange ? 'bg-surface1 drop-shadow-md' : 'bg-surface' } transition-colors p-4 fixed top-0 w-full z-10 md:p-8`}>
                 <button
                     onClick={() => {
                         getInfoURL()
                         openOrNot()
                     }}
-                    className='bg-surface hover:bg-onSurface hover:bg-opacity-[0.08] p-2 grid justify-center rounded-lg'>
+                    className='bg-inherit hover:bg-onSurface hover:bg-opacity-[0.08] p-2  grid justify-center rounded-lg'>
                     <span className="material-symbols-rounded text-onSurface">
                         menu
                     </span>
@@ -47,7 +57,7 @@ const Navbar = () => {
 
                     <ul className='w-full'>
                         <a href="#about" onClick={openOrNot}>
-                            <li className={`${getInfoURL() === "#about" ? 'bg-[#D6E6DE] text-[#101E1A] hover:bg-[#181D0D] hover:bg-opacity-[0.08] font-medium' : 'hover:bg-onSurfaceVariant hover:bg-opacity-[0.08]'} p-4 rounded-full `}>About</li>
+                            <li className={`${(getInfoURL() === "#about" || getInfoURL() === "")  ? 'bg-[#D6E6DE] text-[#101E1A] hover:bg-[#181D0D] hover:bg-opacity-[0.08] font-medium' : 'hover:bg-onSurfaceVariant hover:bg-opacity-[0.08]'} p-4 rounded-full `}>About</li>
                         </a>
                         <a href="#education" onClick={openOrNot}>
                             <li className={`${getInfoURL() === "#education" ? 'bg-[#D6E6DE] text-[#101E1A] hover:bg-[#181D0D] hover:bg-opacity-[0.08] font-medium' : 'hover:bg-onSurfaceVariant hover:bg-opacity-[0.08]'} p-4 rounded-full `}>Education</li>
