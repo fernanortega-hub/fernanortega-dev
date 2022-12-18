@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../layouts/Layout"
 import EducationCard from "./EducationCard/EducationCard"
-import { FirstArrow, SecondArrow } from '../../vectors/SecondSectionArrows'
 
 const EducationSection = () => {
     return (
@@ -14,27 +13,20 @@ const EducationSection = () => {
                 <span className="material-symbols-rounded text-primary"> book </span>
             </div>
 
-            <EducationCard
-                title={"Colegio Hispanoamerica"}
-                subtitle={"Santa Tecla, El Salvador."}
-                content={"General Baccaroulette"}
-                years={"2018 - 2019"} />
+            <section className="space-y-4 xl:flex xl:flex-row xl:gap-4 xl:space-y-0">
+                <EducationCard
+                    title={"Colegio Hispanoamerica"}
+                    subtitle={"Santa Tecla, El Salvador."}
+                    content={"General Baccaroulette"}
+                    years={"2018 - 2019"} />
 
-            <EducationCard
-                title={"Universidad Centroamericana José Simeón Cañas"}
-                subtitle={"Antiguo Cuscatlán, El Salvador."}
-                content={"Computer Science Engineering (in progress)"}
-                years={"2020 - 2022"} />
+                <EducationCard
+                    title={"Universidad Centroamericana José Simeón Cañas"}
+                    subtitle={"Antiguo Cuscatlán, El Salvador."}
+                    content={"Computer Science Engineering (in progress)"}
+                    years={"2020 - 2022"} />
+            </section>
 
-            <div>
-                <FirstArrow />
-                <div className="flex justify-center w-full space-x-4">
-                    <SecondArrow />
-                    <span className="py-3 px-5 text-onSurface text-sm rounded-xl min-w-fit 
-                        flex justify-center items-center border-[3px] border-secondary border-dashed 
-                        self-center align-middle h-[42px]"> My skills </span>
-                </div>
-            </div>
         </Layout>
     )
 }

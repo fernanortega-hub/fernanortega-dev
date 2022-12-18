@@ -5,7 +5,6 @@ const Navbar = () => {
     const [colorChange, setColorchange] = React.useState(false);
 
     function openOrNot() {
-        console.log(window.scrollY);
         setOpen(!open)
     }
 
@@ -43,8 +42,8 @@ const Navbar = () => {
 
     function openNavBar() {
         return (
-            <div className='fixed bg-onSurface w-full h-screen z-50 bg-opacity-25 transition'>
-                <nav className='w-[360px] overflow-y-auto max-w-full h-full min-h-screen bg-surface1 p-4 space-y-9 flex flex-col'>
+            <div className={`${open ? 'left-0 bg-opacity-25 delay-75' : '-translate-x-full bg-opacity-0 '} fixed bg-onSurface w-full h-screen z-50 transition-transform`}>
+                <nav className={`w-[360px] overflow-y-auto max-w-full h-full min-h-screen bg-surface1 p-4 space-y-9 flex flex-col md:p-8`}>
                     <div className='top-0 w-full'>
                         <button
                             onClick={openOrNot}
@@ -74,7 +73,7 @@ const Navbar = () => {
                     </ul>
 
                     <a href="/Curriculum.pdf" download="Resume_Fernando_Ortega">
-                        <button className='bg-primary w-full h-[40px] text-white rounded-xl text-sm font-medium'> Resume </button>
+                        <button className='bg-primary w-full h-[40px] text-white rounded-xl text-sm transition-all font-medium hover:drop-shadow-lg active:drop-shadow-sm active:bg-opacity-[0.88]'> Download my resume </button>
                     </a>
                 </nav>
             </div>
@@ -84,7 +83,10 @@ const Navbar = () => {
     return (
         <div>
             {
-                open ? openNavBar() : normalNavBar()
+                normalNavBar()
+            } 
+            {
+                openNavBar()
             }
         </div>
     );

@@ -13,8 +13,8 @@ const ExperienceSection = () => (
 
         </div>
 
-        <div className="space-y-4 mt-3">
-            <ExperienceTitle title="Web Application and Mobile App development" icon="app_shortcut" src='/notimed-project.png' alt='Android project Notimed' url="https://github.com/UCASV/proyecto-notimed" />
+        <div className="space-y-4 mt-3 lg:flex lg:flex-row lg:w-full lg:h-auto lg:justify-center lg:gap-4 lg:flex-wrap xl:justify-evenly">
+            <ExperienceTitle title="Web Application and Mobile App development" icon="app_shortcut" src='/notimed-project.png' alt='Android project Notimed'glrl="https://github.com/UCASV/proyecto-notimed" />
             <ExperienceTitle title="CEII-UCA official website" icon="travel_explore" src='/ceii.png' alt='CEII-UCA official website' url="https://ceii-uca.com/" />
             <ExperienceTitle title="Plants E-commerce (in progress)" icon="potted_plant" src='/plant-ecommerce.png' alt='Development of plants e-commerce (in progress)' url="https://github.com/fernanortega-hub/e-commerce-project" />
         </div>
